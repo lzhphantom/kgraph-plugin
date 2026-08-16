@@ -63,4 +63,4 @@ kgraph-plugin/
 
 ## License
 
-MIT
+[MIT](LICENSE)
