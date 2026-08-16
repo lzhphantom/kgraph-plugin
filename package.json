@@ -1,0 +1,45 @@
+{
+  "name": "dsh-kgraph-plugin",
+  "version": "0.3.0",
+  "description": "DSH bundle (组合包): read-only project knowledge graph — modules, tech stack, architecture layers, file-level import graphs, observations. Provides /kgraph command, project_kgraph model tool and a browser UI panel.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "bundle",
+    "knowledge-graph",
+    "architecture",
+    "code-analysis"
+  ],
+  "license": "MIT"
+}
