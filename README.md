@@ -1,5 +1,7 @@
 # dsh-kgraph-plugin — 项目知识图谱
 
+[English](README.en.md) | 中文
+
 > DSH（DeepSeek Harness）组合包插件：只读扫描任意项目目录，自动构建**模块级 + 文件级知识图谱**，帮助快速理解项目整体架构与设计思路，为后续进化、优化提供依据。
 >
 > 按 [DSH 官方发布文档](https://deepseek-harness.github.io/deepseek-harness/develop/basic/publish) 打包为标准组合包（bundle），支持 npm / GitHub / tarball 安装。
